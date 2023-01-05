@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.app.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_herbFragment"
+            app:destination="@id/herbFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newHerbFragment"
+        android:name="com.example.app.NewHerbFragment"
+        android:label="NewHerbFragment"
+        tools:layout="@layout/fragment_new_herb" />
+    <fragment
+        android:id="@+id/herbFragment"
+        android:name="com.example.app.HerbFragment"
+        android:label="HerbFragment"
+        tools:layout="@layout/fragment_herb">
+        <action
+            android:id="@+id/action_herbFragment_to_newHerbFragment"
+            app:destination="@id/newHerbFragment"/>
+    </fragment>
+</navigation>
+
