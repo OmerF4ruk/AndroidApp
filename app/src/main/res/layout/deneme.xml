@@ -10,38 +10,58 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-
-        android:text="Bitki"
+        android:layout_marginTop="150dp"
+        android:text="Bitki ismi"
         android:textAlignment="center"
         android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.232"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#270505"
         android:ems="10"
         android:hint="Giriniz"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="@+id/textView2"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="242dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.059"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="68dp"
-        android:layout_height="56dp"
-        android:background="@drawable/clipart572140"
+        android:layout_width="75dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/cam"
+        android:backgroundTint="#813F3F"
+        app:iconTint="#171212"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="392dp" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:rippleColor="@color/black"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/newHerbButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_corner"
+        android:text="ADD HERB"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
