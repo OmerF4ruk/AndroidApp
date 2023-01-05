@@ -10,7 +10,7 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="104dp"
             android:text="Bitki ismi"
             android:textAlignment="center"
             android:textSize="34sp"
@@ -37,17 +37,30 @@
             app:layout_constraintVertical_bias="0.059"
             tools:ignore="MissingConstraints" />
 
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="352dp"
+            android:layout_height="198dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitXY"
+
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"></ImageView>
+
         <Button
             android:id="@+id/button"
             android:layout_width="75dp"
             android:layout_height="54dp"
-            android:layout_marginTop="100dp"
             android:background="@drawable/cam"
             android:backgroundTint="#813F3F"
             app:iconTint="#171212"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+            android:layout_marginTop="50dp"
+            android:onClick="takePhoto"
+
+            app:layout_constraintEnd_toEndOf="@+id/image"
+            app:layout_constraintStart_toStartOf="@+id/image"
+            app:layout_constraintTop_toBottomOf="@+id/image"
             app:rippleColor="@color/black"
             tools:ignore="MissingConstraints" />
 

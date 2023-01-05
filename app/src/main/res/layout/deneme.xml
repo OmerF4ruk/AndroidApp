@@ -5,63 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="352dp"
+        android:layout_height="198dp"
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginTop="150dp"
-        android:text="Bitki ismi"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginTop="1dp"
-        android:backgroundTint="#270505"
-        android:ems="10"
-        android:hint="Giriniz"
-        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.059"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="75dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/cam"
-        android:backgroundTint="#813F3F"
-        app:iconTint="#171212"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
-        app:rippleColor="@color/black"
-        tools:ignore="MissingConstraints" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="takePhoto"
+        android:text="TAKE PHOTO"
+        android:layout_marginTop="30dp"
 
-    <Button
-        android:id="@+id/newHerbButton"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:background="@drawable/rounded_corner"
-        android:text="ADD HERB"
-        android:layout_marginBottom="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-    </Button>
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image"></Button>
 </androidx.constraintlayout.widget.ConstraintLayout>
